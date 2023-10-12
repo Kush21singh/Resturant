@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import meals from "../components/meals.jpg";
 
 import './Header.css';
 
@@ -21,7 +22,7 @@ const Header = () => {
           <span className="cart-count">{itemCount}</span>
         </div>
       </header>
-      <img src="./React_Header.jpg" alt="React Header" className="header-image" />
+      <img src={meals} alt="React Header" className="header-image"  />
     </>
   );
 };
